@@ -79,12 +79,12 @@ PUT
 
 ```http
 /albums                   # Update album's name
-/albums/:album_id/photo  # Add Photo to Album
+/albums/:album_id/photo   # Add Photo to Album
 ```
 
 DELETE
 
 ```http
 /albums                   # Delete album
-/albums/:album_id/photo  # Delete Photo from Album
+/albums/:album_id/photo   # Delete Photo from Album
 ```
