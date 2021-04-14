@@ -5,6 +5,7 @@ Application to manage photos.
 # Requirements
 
 Target is to create a REST API that would allow to:
+
 • Add photos
 
 • Preview of a list of photos
