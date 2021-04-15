@@ -54,6 +54,13 @@ POST
 /photos                   # Upload photo
 ```
 
+In order to post a photo a following form-data must be present in Request:
+
+|   Key   |              Value |
+| :-----: | -----------------: |
+|  file   |         image_file |
+| enctype | multipart/formdata |
+
 DELETE
 
 ```http
@@ -76,11 +83,53 @@ POST
 /albums                   # Create alum
 ```
 
+In order to post a photo a following Headers must be present in Request:
+
+|     Key      |            Value |
+| :----------: | ---------------: |
+| Content-type | application/json |
+
+In order to post a photo a following Body must be present in Request:
+
+```JSON
+{
+    "name":"Album Name",
+}
+```
+
 PUT
 
 ```http
 /albums                   # Update album's name
 /albums/:album_id/photo   # Add Photo to Album
+```
+
+In order to post a update a following Headers must be present in Request:
+
+|     Key      |            Value |
+| :----------: | ---------------: |
+| Content-type | application/json |
+
+In order to post a albm a following Body must be present in Request:
+
+```JSON
+{
+    "name":"Album Name",
+}
+```
+
+In order to add a photo to album following Headers must be present in Request:
+
+|     Key      |            Value |
+| :----------: | ---------------: |
+| Content-type | application/json |
+
+In order to post a albm a following Body must be present in Request:
+
+```JSON
+{
+    "photo": "photoId"
+}
 ```
 
 DELETE
